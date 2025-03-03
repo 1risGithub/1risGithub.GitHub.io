@@ -7,7 +7,7 @@
     document.addEventListener("DOMContentLoaded", function() {
         const cards = [
             {
-                image: "keychain.jpg",
+                image: "/frontend/image/keychain.jpg",
                 title: "Keychain",
                 description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
                 date: "วันที่",
@@ -16,7 +16,7 @@
                 loggedIn: true
             },
             {
-                image: "myheart.jpg",
+                image: "/frontend/image/myheart.jpg",
                 title: "My Heart",
                 description: "Waiting for someone",
                 date: "วันที่",
