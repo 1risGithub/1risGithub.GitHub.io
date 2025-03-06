@@ -1,0 +1,11 @@
+/* thankyou.css */
+.Thankyou {
+  background: var(--modal-bg);
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px var(--modal-shadow);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  max-width: 90%;
+  margin: auto;
+}

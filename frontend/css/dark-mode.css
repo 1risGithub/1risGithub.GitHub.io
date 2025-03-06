@@ -1,0 +1,22 @@
+/* dark-mode.css */
+body.dark-mode {
+  background-color: #353535;
+  color: aliceblue;
+}
+
+body.dark-mode .foundify, body.dark-mode .footer {
+  background-color: #525252;
+}
+
+body.dark-mode .footer-icon i {
+  color: aliceblue;
+}
+
+body.dark-mode .search {
+  background-color: #636363;
+  border: 1px solid #535353;
+}
+
+body.dark-mode .modal {
+  background-color: #626262;
+}

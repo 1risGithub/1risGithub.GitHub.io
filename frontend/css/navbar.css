@@ -1,0 +1,33 @@
+/* navbar.css */
+.foundify {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icon i {
+  font-size: 35px;
+  color: rgb(152, 152, 152);
+  transition: color 0.3s ease;
+}
+
+.footer-icon.active i {
+  color: rgb(36, 222, 206);
+}

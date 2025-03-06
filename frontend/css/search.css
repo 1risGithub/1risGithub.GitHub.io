@@ -1,0 +1,12 @@
+/* search.css */
+.search {
+  border: 1px solid #ccc;
+  padding-right: 40px;
+  flex-grow: 1;
+}
+
+.formSearch {
+  border-radius: 12px;
+  border-color: rgb(36, 222, 206);
+  background-color: white;
+}

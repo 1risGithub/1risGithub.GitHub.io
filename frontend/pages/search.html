@@ -1,3 +1,4 @@
+<!-- search.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,57 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
 
-    <!-- Include Bootstrap CSS -->
+    <!-- Bootstrap & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Include your custom CSS -->
-    <link rel="stylesheet" href="frontend/assets/css/design.css">
-    <link rel="stylesheet" href="frontend/assets/css/addDesign.css">
-     <link rel="stylesheet" href="frontend/assets/css/designset.css">
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/search.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
 </head>
 
-<body >
-
-    <div class="foundify" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-        <a style="flex-grow: 1; text-align: center;">Foundify</a>
-        
-            <label class="switch">
-                <input type="checkbox" id="toggleMode">
-                <span class="slider"></span>
-            </label>
+<body>
+    <!-- Header -->
+    <div class="foundify d-flex justify-content-between align-items-center w-100">
+        <a class="text-center flex-grow-1">Foundify</a>
+        <label class="switch">
+            <input type="checkbox" id="toggleMode">
+            <span class="slider"></span>
+        </label>
     </div>
 
-  
-    <form class="d-flex " role="search" style="width: 100%; padding-top: 100px;" method="get">
-        <div class="input-group " style="width: 100%; display: flex; align-items: center; ">
-            <input class="form-control rounded-pill search" type="search" placeholder="Search" aria-label="Search" name="q" id="searchInput" >
-            <button class="btn btn-outline-success rounded-pill" type="submit" style="border: none; background: none; margin-left: 10px; color: rgb(36,222,206);"
-                onmouseover="this.style.backgroundColor='#dcdcdc';" onmouseout="this.style.backgroundColor='';">
-                <i class="bi bi-search"></i>
-            </button>
-        </div>
-    </form>
-    
-    
-    <div class="container" style="padding-top: 20px; padding-bottom: 80px;">
+    <!-- Search Bar -->
+    <div class="container mt-5">
+        <form class="d-flex w-100" role="search" method="get">
+            <div class="input-group w-100">
+                <input class="form-control rounded-pill search" type="search" placeholder="Search" 
+                       aria-label="Search" name="q" id="searchInput" autocomplete="off">
+                <button class="btn btn-outline-success rounded-pill ms-2" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Search Results -->
+    <div class="container mt-3 mb-5">
         <div id="searchResults"></div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container d-flex justify-content-around d-flex2">
-            <a href="home.html" id="homeLink" class="footer-icon"><i class="bi bi-house-door-fill"></i></a>
-            <a href="search.html" id="searchLink" class="footer-icon"><i class="bi bi-search-heart-fill"></i></a>
-            <a href="add.html" id="addLink" class="footer-icon"><i class="bi bi-plus-circle-fill"></i></a>
-            <a href="signup_login.html" id="setLink" class="footer-icon"><i class="bi bi-person-fill"></i></a>
+        <div class="container d-flex justify-content-around">
+            <a href="home.html" class="footer-icon" id="homeLink"><i class="bi bi-house-door-fill"></i></a>
+            <a href="search.html" class="footer-icon active" id="searchLink"><i class="bi bi-search-heart-fill"></i></a>
+            <a href="add.html" class="footer-icon" id="addLink"><i class="bi bi-plus-circle-fill"></i></a>
+            <a href="signup_login.html" class="footer-icon" id="setLink"><i class="bi bi-person-fill"></i></a>
         </div>
     </footer>
- 
 
-
-  <script src="darkMode.js"></script>
-    <script src="search.js"> </script>
+    <!-- Scripts -->
+    <script src="darkMode.js"></script>
+    <script src="search.js"></script>
 
 </body>
 </html>
